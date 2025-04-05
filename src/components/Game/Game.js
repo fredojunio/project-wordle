@@ -25,8 +25,7 @@ function Game() {
 
     if (tentativeGuess === answer) {
       setGameStatus("won");
-    } else if (guesses.length >= NUM_OF_GUESSES_ALLOWED - 1) {
-      // Still don't know why it's still require -1
+    } else if (nextGuesses.length >= NUM_OF_GUESSES_ALLOWED - 1) {
       setGameStatus("lost");
     }
   }
